@@ -1,6 +1,6 @@
 package beans;
 
-public class Person {
+public class Employee {
 
   final Integer id;
   final String firstName;
@@ -15,8 +15,8 @@ public class Person {
 
   double salary;
 
-  public Person(Integer id, String firstName, String lastName, String email, String gender,
-      Integer age, String department, int yearOfJoining, double salary) {
+  public Employee(Integer id, String firstName, String lastName, String email, String gender,
+                  Integer age, String department, int yearOfJoining, double salary) {
     this.id = id;
     this.firstName = firstName;
     this.lastName = lastName;

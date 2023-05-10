@@ -2,7 +2,7 @@ package lectures;
 
 
 import beans.Car;
-import beans.Person;
+import beans.Employee;
 import mockdata.MockData;
 import org.junit.Test;
 
@@ -15,7 +15,7 @@ public class Lecture7 {
   @Test
   public void count() throws Exception {
     //counting number of females in our mockdata
-    List<Person> people = MockData.getPeople();
+    List<Employee> people = MockData.getEmployee();
     long count =  people.stream()
             .filter(person -> person.getGender().equals("Female"))
             .count();

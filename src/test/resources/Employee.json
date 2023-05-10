@@ -1668,7 +1668,10 @@
     "lastName": "Pietroni",
     "email": "epietroni47@cargocollective.com",
     "gender": "Female",
-    "age": 99
+    "age": 99,
+    "department": "Sales And Marketing",
+    "yearOfJoining": 2015,
+    "salary": 15000.0
   },
   {
     "id": 153,
@@ -2347,7 +2350,10 @@
     "lastName": "Fandrey",
     "email": "dfandrey5x@angelfire.com",
     "gender": "Female",
-    "age": 37
+    "age": 37,
+    "department": "Sales And Marketing",
+    "yearOfJoining": 2015,
+    "salary": 15000.0
   },
   {
     "id": 215,
@@ -7559,7 +7565,10 @@
     "lastName": "Younie",
     "email": "pyouniej3@diigo.com",
     "gender": "Male",
-    "age": 92
+    "age": 92,
+    "department": "Sales And Marketing",
+    "yearOfJoining": 2015,
+    "salary": 15000.0
   },
   {
     "id": 689,

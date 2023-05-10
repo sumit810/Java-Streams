@@ -2,7 +2,7 @@ package lectures;
 
 
 import beans.Car;
-import beans.Person;
+import beans.Employee;
 import com.google.common.collect.ImmutableList;
 import mockdata.MockData;
 import org.junit.Test;
@@ -26,7 +26,7 @@ public class Lecture5 {
   @Test
   public void ourFirstMapping() throws Exception {
     // transform from one data type to another
-    List<Person> people = MockData.getPeople();
+    List<Employee> people = MockData.getEmployee();
 
   }
 

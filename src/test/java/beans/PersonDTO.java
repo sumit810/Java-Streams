@@ -34,7 +34,7 @@ public class PersonDTO {
         '}';
   }
 
-  public static PersonDTO map(Person person) {
+  public static PersonDTO map(Employee person) {
     return new PersonDTO(person.getId(), person.getFirstName(), person.getAge());
   }
 }

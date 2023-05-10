@@ -1,6 +1,6 @@
 package lectures;
 
-import beans.Person;
+import beans.Employee;
 import java.util.List;
 import java.util.stream.IntStream;
 import mockdata.MockData;
@@ -23,10 +23,10 @@ public class Lecture2 {
 
   @Test
   public void rangeIteratingLists() throws Exception {
-    List<Person> people = MockData.getPeople();
-    IntStream.range(0, people.size())
+    List<Employee> employee = MockData.getEmployee();
+    IntStream.range(0, employee.size())
             .forEach(index -> {
-              Person person = people.get(index);
+              Employee person = employee.get(index);
               System.out.println(person);
             });
   }

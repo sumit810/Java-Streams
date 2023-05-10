@@ -1,7 +1,7 @@
 package mockdata;
 
 import beans.Car;
-import beans.Person;
+import beans.Employee;
 import com.google.common.collect.ImmutableList;
 import com.google.common.io.Resources;
 import com.google.common.reflect.TypeToken;
@@ -15,12 +15,12 @@ import org.apache.commons.io.IOUtils;
 
 public class MockData {
 
-  public static ImmutableList<Person> getPeople() throws IOException {
-    InputStream inputStream = Resources.getResource("people.json").openStream();
+  public static ImmutableList<Employee> getEmployee() throws IOException {
+    InputStream inputStream = Resources.getResource("Employee.json").openStream();
     String json = IOUtils.toString(inputStream);
-    Type listType = new TypeToken<ArrayList<Person>>() {
+    Type listType = new TypeToken<ArrayList<Employee>>() {
     }.getType();
-    List<Person> people = new Gson().fromJson(json, listType);
+    List<Employee> people = new Gson().fromJson(json, listType);
     return ImmutableList.copyOf(people);
   }
 
