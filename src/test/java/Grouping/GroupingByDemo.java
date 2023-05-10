@@ -82,8 +82,20 @@ public class GroupingByDemo {
                 .collect(Collectors.groupingBy(Employee::getDepartment, Collectors.averagingDouble(Employee::getSalary)));
         System.out.println("Average salary of each department" +averSalaryDepartment);
 
+        /*
+        Q8. Get the details of youngest male employee in the HR department?
+         */
+        Optional<Employee> youngestMaleEmployeeInHRDept = employee.stream()
+                .filter(ele -> ele.getGender().equalsIgnoreCase("Male") && ele.getDepartment().equals("HR"))
+                .min(Comparator.comparingInt(Employee::getAge));
+        System.out.println("Youngest male employee in the HR department" + youngestMaleEmployeeInHRDept);
+
+        /*
+        Q8. Who has the most working experience in the organization?
+         */
+        Optional<Employee> mostWorkingExperinceEmployee = employee.stream()
+                .sorted(Comparator.comparingInt(Employee::getYearOfJoining)).findFirst();
+        System.out.println("Most working experience in the organization" +mostWorkingExperinceEmployee);
+
     }
-
-
-
 }

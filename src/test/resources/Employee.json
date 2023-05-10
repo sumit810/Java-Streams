@@ -4,8 +4,8 @@
     "firstName": "Dixie",
     "lastName": "O'Finan",
     "email": "dofinan0@huffingtonpost.com",
-    "gender": "Female",
-    "age": 91,
+    "gender": "Male",
+    "age": 1,
     "department": "HR",
     "yearOfJoining": 2011,
     "salary": 25000.0
@@ -18,7 +18,7 @@
     "email": "hmarling1@moonfruit.com",
     "gender": "Male",
     "age": 38,
-    "department": "Sales And Marketing",
+    "department": "HR",
     "yearOfJoining": 2015,
     "salary": 15000.0
   },
